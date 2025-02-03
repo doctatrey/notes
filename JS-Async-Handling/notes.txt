@@ -1,0 +1,29 @@
+!! VIDEO NOTES !!
+
+THE CALL STACK
+one thread == one call stack == one thing at a time
+
+The call stack is a data structure that records where in the program we are
+Step into function -> Adds something to the stack
+Return from function -> Pops off the top of the stack
+
+BLOCKING
+Blocking is when a synchronous function blocks the stack from running anything below it.
+
+Concurrency & the Event Loop
+The event loop has one job. It checks if the stack is empty, if so, it pushes the first thing from the task queue onto the stack.
+
+
+!! DOC NOTES !!
+
+Asynchronous programming is a technique that allows you to run long-running tasks while
+still responding to other events while that long task runs.
+
+Examples of long running functions that are asynchronous:
+fetch() (HTTP requests)
+getUserMedia() (Using a users microphone or camera)
+showOpenFilePicker() (Asking a user to select files)
+
+With promised-based APIs, the async function starts the operation and returns a 
+Promise object. We can then attach handlers to this promise object, which will be 
+ran when the operation has succeeded or failed.
