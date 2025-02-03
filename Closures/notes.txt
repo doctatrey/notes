@@ -1,0 +1,3 @@
+CLOSURES
+
+Every scope has access to everything outside its scope
