@@ -1,0 +1,41 @@
+HTTP REQUESTS
+
+- Make HTTP requests to get data from another server
+- We make these requests to API endpoints
+
+
+Ex. 
+
+http://www.musicapi.com/artist/moby
+
+  OUR      (HTTP Request) --->    SOME OTHER
+WEBSITE  <---- (Response (data))   SERVER
+
+
+Components of a HTTP Request
+
+Method - Defines the action to be performed (GET, POST, PUT, DELETE)
+URL - Specifies the resource location
+Headers - Contain metadata (authentication, content type, etc.)
+Body - Includes data for methods like POST & PUT
+
+
+HTTP Methods
+
+GET - Retrieve data from a server
+POST - Send data to a server (e.g., form submission)
+PUT - Update existing data on a server
+DELETE - Remove data from a server
+
+
+API Lifecycle
+
+1. Design
+    Define endpoints, request/response format, authentication
+    Use tools like Swagger or Postman
+2. Development
+    Implement API using backend technologies (e.g. Node.js, Express, Django)
+3. Testing
+    Use tools like Postman or Jest
+4. Deployment
+    Host on platforms like Vercel, Heroku, AWS, or DigitalOcean

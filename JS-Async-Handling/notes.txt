@@ -1,4 +1,4 @@
-!! VIDEO NOTES !!
+JS ASYNC HANDlING 
 
 THE CALL STACK
 one thread == one call stack == one thing at a time

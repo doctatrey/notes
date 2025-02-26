@@ -1,3 +1,3 @@
 CLOSURES
 
-Every scope has access to everything outside its scope
+Every function has access to everything outside its scope
