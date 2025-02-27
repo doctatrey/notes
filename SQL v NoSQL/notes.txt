@@ -1,0 +1,69 @@
+SQL - Structured Query Language
+
+Underlying RDBMS Engines (MySQL, PostgreSQL)
+4 Key Components: Structure, Storage, Scale, Access
+
+STRUCTURE
+Tables - Must have a primary key, attributes are just general 
+data of the record, and foreign keys are links to other data
+Constraints - Attributes can only be a date and foreign keys can
+only be integers
+Relations - This allows us to link our databases to other databases, 
+giving us very flexible data structures
+
+STORAGE
+Storage is concentrated, meaning there is 1 node that has all of our
+data
+
+SCALE 
+Vertical (better machine) - More memory, better gpu, etc.
+Horizontal (more machines) - Adding more machines, adding data across
+multiple nodes
+
+ACCESS
+Raw SQL 
+Direct database connection
+Object Relation Mappers
+
+
+NoSQL - Anything that is non-relational
+
+Many implementations... Table, Document, Graph
+Built to scale with high performance, but queries are less flexible
+
+STRUCTURE
+Implementation dependent (tables, documents, graphs, etc.)
+Key Value Store
+
+STORAGE
+Hashing Input (f(x) -> Partition 1 & Partition 2)
+
+SCALE
+Add more partitions (f(x) -> Partition 1, Partition 2, & Partition 3)
+
+ACCESS
+REST APIs
+CRUD in Vendor specific language
+
+
+When to use what?
+
+SQL
+When your access patterns aren't defined (When you don't know how you want your data structured)
+When you want to perform flexible queries 
+When you want to perform relational queries
+When you want to enforce field constraints
+When you want to use a well documented access language (SQL)
+
+NoSQL
+When your pattern is defined
+When your primary key is known
+When your data model fits (graphs)
+When you need high performance and low latency
+
+
+How to pick
+
+Small Project + Low Scale + Unknown Patterns -> SQL
+Large Project + High Scale + Relational Queries -> SQL with read replicas
+Medium / Large Project + High Scale + High Performance -> NoSQL
