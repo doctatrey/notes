@@ -1,0 +1,49 @@
+Big O
+A way of analyzing the runtime of our program as the input grows in size.
+We typically analyze this via a graph, with the Input Size (n) on the x axis, with time on the y axis.
+We only care about the variable, n. Not any constants.
+
+Ex.
+n / 2 --> We don't care
+n + 5 --> We don't care
+5n --> We don't care
+
+
+1. O(1)
+O(1) is a constant time operation. There is no growth. 
+Any lookup operation will take constant time ( O(1) ).
+
+2. O(n)
+O(n) is a linear time operation. The time grows proportionally to the input size.
+If you iterate through each value in an array once, then the loops runs n times, making the time complexity O(n).
+Inserting or removing in the middle of an array is O(n).
+
+3. O(n^2)
+O(n^2) occurs when you use nested loops, operate on all pairs of elements, use simple sorting algorithms (bubble sort, insertion sort, selection sort), brute force algorithms
+
+4. O(n*m)
+Typically occurs when you have a 2D array with different side lengths (e.g., 2x3, 4x2, etc.)
+Can also occur when comparing two different-sized lists or nested loops with different sizes.
+
+5. O(n^3)
+Fairly uncommon, highest you'd typically get to
+Occurs when you have 3 nested loops
+
+6. O(logn)
+Most commonly occurs in binary search because on every iteration we eliminate half of the elements in the array
+Also occurs with divide and conquer algorithms, tree traversal in balanced trees, and exponentiation by squaring.
+
+7. O(nlogn)
+Most commonly occurs with sorting algorithms
+
+8. O(2^n)
+Most common with exponential recursion (Fibonacci, Towers of Hanoi)
+Backtracking algorithms (Solving maze, subset generation, brute-force combinatorial problems)
+Certain brute-force solutions (e.g., traveling salesman problem)
+
+9. O(sqrt(n))
+Rare runtime
+Occurs in prime number checking, square root-based optimizations, finding factors of a number, and some rare mathematical algorithms
+
+10. O(n!)
+Generating all permutations, Brute -force solutions for NP-hard problems, backtracking algorithms (without pruning), solving the n-queens problem
