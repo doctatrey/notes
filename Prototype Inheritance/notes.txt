@@ -1,0 +1,12 @@
+PROTOTYPE INHERITANCE 
+
+Prototype Inheritance is a concept in JavaScript that allows object to inherit properties and methods from other objects.
+Unlike class-based inheritance in languages like Java or C++, JS uses a prototype-based approach
+
+
+BASICS
+
+In JS, every object has a hidden property called [[Prototype]] (also accessible via __proto__), which points to
+another object called its prototype. When you try to access a property or method that doesn't exist on an object, JavaScript 
+automatically looks for it in the object's prototype, then in the prototype's prototype, and so on, forming what's called the 
+"prototype chain."
