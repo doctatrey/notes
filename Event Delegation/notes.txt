@@ -1,0 +1,57 @@
+Event Delegation
+
+A JavaScript technique that allows you to attach a single event listener to a parent element instead of adding event
+listeners to multiple child elements. This approach can leverage event bubbling to handle events efficiently.
+
+
+Key Concepts
+
+1. Event Bubbling
+    * When an event occurs on an element, it first runs the handlers on it, the non its parent, then all the way up 
+      other ancestors
+    * This natural propagation of events allows for event delegation.
+
+2. Basic Syntax
+    * Consult code
+
+
+Advantages of Event Delegation
+
+1. Performance Optimization 
+    * Reduces the number of event listeners
+    * Less memory consumption
+    * More efficient for dynamically added listeners
+
+2. Dynamic Element Handling
+    * Works with elements added to the DOM after initial page load
+    * No need to rebind events to new elements
+
+
+Common Use Cases
+
+    * Large lists or tables
+    * Dynamically generated content
+    * Navigation menus 
+    * Form interactions 
+
+
+Important Methods & Properties
+
+    * event.target: The deepest element that organized the event
+    * event.currentTarget: The element that the listener is attached to
+    * .matches(): Checks if an element matches a selector
+    * event.stopPropagation(): Prevents event from bubbling up
+
+
+Potential Pitfalls
+
+    * Not all events bubble (e.g., focus, blur)
+    * Performance can degrade with very complex DOM structures
+    * Need to be careful with event matching
+
+
+Best Practices
+    * Use as high in the DOM tree as practical
+    * Be specific with selector matching
+    * Confider performance for extremely large lists
+    * Use event.stopPropagation() when needed
