@@ -1,0 +1,15 @@
+Evolution of Async Patterns in JS
+
+1. Callbacks
+The original approach to handling async operations
+
+Challenges:
+    * Callback hell (nested callbacks) - leads to code that's difficult to read and maintain
+    * Error handling complexity - required checking for errors in each callback
+    * Inversion of control - you hand control of your program to another function
+
+2. Promises 
+Introduced to solve callback issues with a more structures approach
+
+3. Async / Await
+Syntactic sugar over promises for more readable code
