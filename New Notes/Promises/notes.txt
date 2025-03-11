@@ -1,0 +1,19 @@
+PROMISE
+
+The promise object represents the eventual completion (or failure) of an 
+asynchronous operation and its resulting value.
+
+A promise is in one of the following states:
+pending: initial state, neither fulfilled nor rejected
+fulfilled: the operation was completed successfully
+rejected: the operation failed
+
+The promise object supports two properties: state and result 
+While a promise is "pending" (working), the result is undefined
+When a promise is "fulfilled:, the result is a value
+When the Promise object is "rejected", the result is an error object
+
+myPromise.state = "pending" --> myPromise.result = undefined
+myPromise.state = "fulfilled" --> myPromise.result = a result value
+myPromise.state = "rejected" --> myPromise.result = an error object
+
