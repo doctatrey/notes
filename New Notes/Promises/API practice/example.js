@@ -17,12 +17,14 @@ async function getWeather(lat, lon) {
 }
 
 async function main() {
-  const lat = '45.3029';
-  const lon = '-122.7727';
+  const lat = '40.7128';
+  const lon = '-74.0060';
   
   try {
     const weatherData = await getWeather(lat, lon);
-    console.log(weatherData.data.values.temperature)
+    let c = weatherData.data.values.temperature
+    let f = (c * (9/5)) + 32;
+    console.log(`Celsius: ${c}\nFahrenheit: ${f}`)
   } catch (error) {
     handleError(error);
   }
